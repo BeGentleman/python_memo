@@ -1,0 +1,2 @@
+# python_memo
+用来记录学习python过程中出现的问题以及解决方案
