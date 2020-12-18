@@ -1,0 +1,5 @@
+>>> a = "一个字符串"
+>>> b = "yigezifuchuan"
+>>> print("%s的汉字是%s"%(a,b))
+一个字符串的汉字是yigezifuchuan
+>>> 
