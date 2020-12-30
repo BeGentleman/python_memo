@@ -1,0 +1,25 @@
+0x00 sorted()用法
+     对所有可迭代的对象进行排序操作
+     
+0x01 sorted()写法
+     sorted(iterable, cmp=None, key=None, reverse=False)
+     iterable:代表可迭代对象
+     cmp:代表比较的函数，默认未None，python3中删除了cmp(TODO:以后进行补充)
+     key:代表用来比较的元素，这个元素来自于iterable对象，配合lambda表达式进行使用，默认为None
+     reverse:代表按照升序或者降序排序，reverse=True表示降序，reverse=False表示升序，默认为False
+     举例子一：
+            >>> a = [2,5,21,77,5,333,1]
+            >>> b=sorted(a)
+            >>> print(b)
+            [1, 2, 5, 5, 21, 77, 333]
+            >>>
+     举例子二：
+            >>> list1 = [('a',66),('b',3),('c',34),('d',2),('e',1)]
+            >>> sorted(list1, key=lambda x:x[1])
+            [('e', 1), ('d', 2), ('b', 3), ('c', 34), ('a', 66)]
+            >>> 
+     举例子三：
+            >>> list1 = [('a',66),('b',3),('c',34),('d',2),('e',1)]
+            >>> sorted(list1, key=lambda x:x[1], reverse=True)
+            [('a', 66), ('c', 34), ('b', 3), ('d', 2), ('e', 1)]
+     
