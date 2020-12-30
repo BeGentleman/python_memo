@@ -1,0 +1,30 @@
+lambda也叫做匿名函数
+
+
+
+写法由四部分组成：1.关键字lambda 2.参数 3.字符： 4.操作（也是要return的内容）
+
+在第二部分参数有两种情况：1.无参数：表示这个lambda匿名函数直接冒号后面的值
+                         2.有参数：a.已知个数参数：直接将参数写上就好
+                                   b.未知个数参数：用*args,**kwargs作为参数
+
+常见的三种用法：
+
+1.改写函数
+  举例说明：
+           def subab(a,b):
+               return a+b
+               
+           这个函数可以直接改写成lambda匿名函数，样子如下：
+           subab = lambda a,b : a+b
+ 
+ 2.结合三目运算符
+   举例说明：
+            bijiaoab = lambda a,b : a if a > b else b
+            print(bijiao(1,2))
+            
+            三目运算如果a>b,输出a；否则输出b
+            配合lambda匿名函数就变成了一个函数方法
+ 
+ 3.用在列表当中
+   TODO:补充
