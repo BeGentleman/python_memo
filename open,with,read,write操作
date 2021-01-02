@@ -1,0 +1,17 @@
+0x00 
+     a.open()作用是什么？
+     open()是python的内置函数，用于打开一个文件，并创建一个file对象。
+     
+     b.open()写法
+     对象名 = open('路径','文件打开模式'，buffering寄存状态)
+     举例说明：
+             f = open(r'C:\Users\y\Desktop\iocaozuo.png','rb')
+     # TODO:具体总结
+     
+     c.open()函数有什么注意点
+
+0x01 with作用是什么？
+
+0x02 read作用是什么？
+
+0x04 write作用是什么
