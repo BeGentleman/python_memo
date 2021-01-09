@@ -1,8 +1,13 @@
 0x00 什么是api？
+     Application Programming Interface缩写为api, 应用程序编程接口。
+     即系统可以无需向外展示源码的情况下，又可以让外部访问获取指定数据的一种方式。
 
 0x01 api有什么作用？
+     不同的应用程序可以链接在一起。
 
 0x02 python如何使用api
+     举例：Django框架下一个简单的api实现。
+     # TODO
 
 0x03 如何编写一个api
 
