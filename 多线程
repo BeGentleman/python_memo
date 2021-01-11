@@ -1,7 +1,53 @@
 0x00 什么是多线程？
+     多线程就像是把一个一个人做的工作，分给不同的人一起做的一种方式。
 
 0x01 多线程的作用是什么？
+     为了提高效率。
 
-0x02 python实现多线程
+0x02 python多相关知识点
+     a.查看当前的有多少激活的线程
+       threading.active_count()
+     b.查看当前激活的线程是哪些
+       threading.enumerate()
+     c.查看在运行程序的时候正在运行的线程是什么
+       threading.current_thread()
+     d.怎么新增一个线程
+       threading.thread(target=新增的函数)
+       
+     将a,b,c,d四个用代码展示一下
+     import threading
+     import time
 
+     def thread_job():
+         time.sleep(10)
+         print('新增的线程是 %s'%threading.current_thread())
+
+
+     def main():
+         add_thread = threading.Thread(target=thread_job)
+         print("有%s个线程"%threading.active_count())
+         print("当前激活的线程有",threading.enumerate())
+         print("正在运行的线程是",threading.current_thread())
+         add_thread.start()
+         print("-----------------------------------")
+         print("有%s个线程"%threading.active_count())
+         
+         
+     if __name__=='__main__':
+         main()
+
+     输出：
+     ===================== RESTART: C:/Users/y/Desktop/ceshi.py =====================
+     有2个线程
+     当前激活的线程有 [<_MainThread(MainThread, started 20356)>, <Thread(SockThread, started daemon 20340)>]
+     正在运行的线程是 <_MainThread(MainThread, started 20356)>
+     -----------------------------------
+     有3个线程
+     >>> 新增的线程是 <Thread(Thread-1, started 16296)>
+     
+     (注意：如果不对子线程进行延迟，可能还没等捕捉到这个线程，线程就结束了，所以去掉sleep的几秒，输出结果可能都是“有2个线程”，而不会出现"有3个线程")
+     
+     # TODO
+     
 0x03 多线程的使用范例
+
