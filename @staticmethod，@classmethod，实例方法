@@ -9,6 +9,19 @@
      普通的实例方法需要第一个参数为self，表示实例本身。
 
      举例说明：
+     a.先举一个实例方法的
+     class A(object):
+         def shilifangfa(self):
+             print(self,"是一个实例方法")
+
+     A.shilifangfa("小明")
+     A.shilifangfa("大明")
+
+     这样就会输出：
+     小明 是一个实例方法
+     大明 是一个实例方法
+
+     b.再举一个@staticmethod静态方法的
      # TODO
 
 0x02 @staticmethod应用场景？@classmethod应用场景？实例方法应用场景？
