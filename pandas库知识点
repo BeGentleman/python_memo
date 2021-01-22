@@ -3,3 +3,26 @@
 
 0x01 怎么实现删除不符合列要求元素所在的行
      # TODO
+
+0x02 怎么读取文件
+     读取文件分为几种情况
+     情况一：读取CSV文件，以.csv后缀结尾
+     使用语句：excel_data = pd.read_excel("./data_file/excel_data.xlsx")
+     
+     情况二：读取excel文件，以.xlsx或者.xls后缀结尾
+     使用语句：csv_data = pd.read_csv("./data_file/csv_data.csv")
+     
+     情况三：读取txt文件，以.txt后缀结尾
+     使用语句：txt_data = pd.read_table("./data_file/txt_data.txt")
+     
+     情况四：读取json文件，以.json后缀结尾
+     使用语句：json_data = pd.read_json("./data_file/json_data.json")
+
+0x03 读取文件以后读取指定的行或者列
+      
+      读取列：
+      读取excel的时候，可以用usecols="A" 这里A等等都是excel列的名字,从A开始
+      df=pd.read_excel(r"C:\Users\y\Desktop\pandaceshi.xlsx", usecols="A,B")
+      也可以用usecols=[0]，这里的0相当于列名A，从0开始
+      
+      
