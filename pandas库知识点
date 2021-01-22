@@ -25,4 +25,11 @@
       df=pd.read_excel(r"C:\Users\y\Desktop\pandaceshi.xlsx", usecols="A,B")
       也可以用usecols=[0]，这里的0相当于列名A，从0开始
       
-      
+      读取df指定列名字的列：
+      df['列名']
+      如果 用 df['列名'].isin(['条件'])，结果用true 或 false表示
+      0      True
+      1     False
+      2     False
+      3     False
+      像这种输出。
