@@ -1,0 +1,26 @@
+0x00 is not none 返回值是什么?
+     举例看：
+          >>> a = None
+          >>> print(a)
+          None
+          >>> if a is not None:
+            print("走进来了")
+
+
+          >>> if a is None:
+            print("走进来了")
+
+
+          走进来了
+          >>> 
+          
+          发现在a为None时，可以打印出来，但是因为if的条件是true才会走进判断里面，第一个if a is not None是False，所以不会输出；
+          而第二个a is None是True，所以可以走进条件判断里面，可以输出“走进来了”。
+          
+          得到 返回值 是bool类型。
+
+0x01 一般用在什么地方？
+     在数据清理的时候，比如从excel中读取数据以后，excel中有些数据不存在（不是0，也不是null），就会用到None这种类型（null是str类型）。
+
+0x02 None类型怎么判断？
+     只需要判断 a == a，就可以了。
