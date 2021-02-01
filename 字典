@@ -3,3 +3,8 @@
 0x01 字典的特点
 
 0x02 字典的实现
+
+0x03 字典中的报错
+     a.TypeError: unhashable type: 'dict'
+     产生的原因是：字典中的key如果写成dictionary类型，或list类型，都会引起这个错误，因为dictionary和list类型不可hash。
+     不可哈希：要求一个对象不允许变化，list和dictionary都可以删除增加元素等操作，所以不可哈希。
