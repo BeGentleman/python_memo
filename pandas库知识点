@@ -40,3 +40,6 @@
       
       df.loc[x].values #x是行号
       这样输出的类型是 <class 'numpy.ndarray'>
+      
+      统计行数
+      len(df)
