@@ -1,0 +1,35 @@
+0x00 如果我要反转一个列表可以有哪些方法？
+     方法一：用内置函数reverse()
+     
+     举例子说明：
+               >>> list1 = [1,2,3,4,5,6]
+               >>> print(list1.reverse())
+               None
+               >>> list2 = ['1','2','3','4','5','6']
+               >>> print(list2.reverse())
+               None
+               >>> after = list1.reverse
+               >>> print(after)
+               <built-in method reverse of list object at 0x000001F95EE55C48>
+               >>> after = list1.reverse()
+               >>> print(after)
+               None
+               >>> print(list1)
+               [1, 2, 3, 4, 5, 6]
+               >>> list1.reverse()
+               >>> print(list1)
+               [6, 5, 4, 3, 2, 1]
+               >>> list2.reverse()
+               >>> print(list2)
+               ['1', '2', '3', '4', '5', '6']
+               >>> print(list2.reverse())
+               None
+               >>> print(list2)
+               ['6', '5', '4', '3', '2', '1']
+               >>> 
+               
+               从上面可以看出，如果将一个列表反转后赋给另一个对象，输出时对象为None，这一点要注意。
+        方法二：用列表切片反向读取
+              list1 = [6,5,4,3,2,1]
+              >>> print(list1[::-1])
+              [1, 2, 3, 4, 5, 6]
