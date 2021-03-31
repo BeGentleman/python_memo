@@ -1,0 +1,33 @@
+0x00 安装sklearn第三方库
+     pip install scikit-learn
+
+0x01 SimpleImputer中fit和transform将缺失值填充为列的均值
+     直接举例子：
+               import numpy as np
+               from sklearn.impute import SimpleImputer
+
+               imp = SimpleImputer(missing_values=np.nan, strategy='mean')
+               data_syori_before = [
+                   [55,2,3,4,5,np.nan,np.nan,8,9],
+                   [1,np.nan,3,4,5,62,7,8,9],
+                   [1,2,35,4,57,6,7,8,9],
+                ]
+                imp.fit(data_syori_before)
+                X = data_syori_before
+                imp.transform(X)
+ 
+                有缺失值的矩阵：
+                [
+                   [55,2,3,4,5,np.nan,np.nan,8,9],
+                   [1,np.nan,3,4,5,62,7,8,9],
+                   [1,2,35,4,57,6,7,8,9],
+                ]
+ 
+                
+                处理过的矩阵：
+                array([[55.,  2.,  3.,  4.,  5., 34.,  7.,  8.,  9.],
+                       [ 1.,  2.,  3.,  4.,  5., 62.,  7.,  8.,  9.],
+                       [ 1.,  2., 35.,  4., 57.,  6.,  7.,  8.,  9.]])
+
+               说明：fit是求出列的均值，transform是将均值填入到对应矩阵中。
+               注意：第一个有缺失值的矩阵，和想要将列的均值填入的目标矩阵，必须是同等维度。否则会报错。
