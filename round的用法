@@ -1,0 +1,41 @@
+0x00 round的作用
+     用来确定精度
+     写法：
+          1.round()用来取整数部分
+          2.round(变量, 小数精度位数)
+     注意：
+          假设数字a是浮点型小数，a=0.0 ，则无论给多少精度位数，都不会超过小数本身的位数。
+          假设数字b是整数，b=2，则无论给多少精度位数，都只会取整数本身。
+     
+     举例说明：
+              >>> a = 1.121212132132131
+              >>> b = 0.0
+              >>> c = 22.896
+              >>> 
+              >>> print(round(a))
+              1
+              >>> print(round(a,1))
+              1.1
+              >>> print(round(5))
+              5
+              >>> print(rounnd(100))
+              Traceback (most recent call last):
+                File "<pyshell#10>", line 1, in <module>
+                  print(rounnd(100))
+              NameError: name 'rounnd' is not defined
+              >>> print(round(100))
+              100
+              >>> print(round(a, 100))
+              1.121212132132131
+              >>> print(round(b))
+              0
+              >>> print(round(b, 3))
+              0.0
+              >>> print(round(c))
+              23
+              >>> print(round(c, 2000))
+              22.896
+              >>> d = 0
+              >>> print(round(d, 10))
+              0
+              >>> 
