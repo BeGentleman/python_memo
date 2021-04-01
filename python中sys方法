@@ -2,3 +2,16 @@
      这句话等同于 print()
      在python2中不会输出字符串长度，
      但是在python3中会在结尾返回一个字符串长度。
+     
+     举例：
+     >>> sys.stdout.write('hello')
+     hello5
+
+0x01 sys.stdin.readline()
+     这句话等同于 input()
+     注意：在输入后面会带一个换行符。
+     
+     举例：
+     >>> sys.stdin.readline()
+     12
+     '12\n'
