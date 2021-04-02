@@ -66,3 +66,23 @@ print(st)
 # aaaaaa
 # 20
 # None
+
+
+三目运算符注意：
+条件成立的时候执行语句   条件     条件不成立的时候执行的语句
+条件成立的时候执行语句 和 条件不成立的时候执行的语句    必须都是表达式，否则会报SyntaxError: can't assign to conditional expression
+
+在拆解三目运算表达式的时候 先找到if，在进行后续分析
+举例：
+a = 6 if a > b else b = 6
+print('a结果现在为：%d' % a)
+print('b结果现在为：%d' % b)
+
+  File "D:\Pycharm\install here\PyCharm 2020.1\plugins\python\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "D:/BlackHorseEdu/practice/12-三目运算符.py", line 6
+    a = 6 if a > b else b = 6
+       ^
+SyntaxError: can't assign to conditional expression
+  
+TODO：为什么错误，写下原因
