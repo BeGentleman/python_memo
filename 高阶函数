@@ -1,1 +1,5 @@
 0x00 map()
+
+0x01 reduce()
+
+0x01 filter()
