@@ -5,3 +5,6 @@
      
 0x01 格式化代码
      ctrl+alt+L
+
+其他：
+     pycharm中project，文件右键 copy path有绝对路径和相对路径。
