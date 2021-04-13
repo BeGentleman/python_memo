@@ -1,0 +1,18 @@
+0x00 center()是什么
+     center()是字符串的一个方法，用于给目标对象居中于字符串当中
+     写法： 
+          想要剧中的字符串.center(字符串长度， 填充字符串)
+          填充字符串可以省略
+          
+     举例说明：
+             打印一个菱形
+             
+             for i in range(1, 7, 2):
+                 print(("*"*i).center(7))
+             for j in range(1, 5, 2).__reversed__():
+                 print(("*"*j).center(7))
+
+             print(("*"*i.center(7)))表示在一个长度为7的字符串中间放入 "*"*i  
+      
+             
+
