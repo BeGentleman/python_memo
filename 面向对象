@@ -6,8 +6,40 @@
      继承：描述多个类之间的所属关系。												
           A类当中的属性和方法可以在B中复用，则可以通过继承的方式，传递到B中。							
           A类就叫做基类，也叫父类；B类就是派生类，也叫子类。							
+     多态：一类事务有多种形态。一般在多态存在于继承中，传入不同的对象，得到不同的结果。
+           多态举例子：
+                    # 多态
+                    # Step1: 先创建父类
+                    class Dog(object):
+                        def work(self):
+                            print("指哪打哪")
 
-     多态：
+
+                    # Step2: 子类重写父类
+                    class ArmyDog(Dog):
+                        def work(self):
+                            print("追击敌人")
+
+                    class DrugDog(Dog):
+                        def work(self):
+                            print("追查毒品")
+
+                    # Step3： 传入不同的结果
+                    class Person(object):
+                        def work_with_dog(self, dog):# 多态：传入不同的对象，执行不同的代码，即不同的work函数
+                            dog.work()
+
+                    dog1 = ArmyDog()
+                    dog2 = DrugDog()
+
+                    daqiu = Person()
+                    daqiu.work_with_dog(dog1)
+                    daqiu.work_with_dog(dog2)
+                    
+                    输出：                    
+                    追击敌人
+                    追查毒品
+
 
 0x02 面向对象中两大组成
      类 和 对象。
