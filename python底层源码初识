@@ -1,0 +1,10 @@
+0x00 起因
+     “print的底层实现”
+     直到了print不是最小单元。
+
+0x01 阶段
+     python解释器中，写一个错误，然后Alt+N，
+     得到：Readline internal error， 然后一个一个文件打开去看。
+     
+0x02 学习内容：
+     # TODO
