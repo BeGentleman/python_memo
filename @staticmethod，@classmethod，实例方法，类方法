@@ -1,7 +1,8 @@
-0x00 什么是@staticmethod？什么是@classmethod？什么是实例方法？
+0x00 什么是@staticmethod？什么是@classmethod？什么是实例方法？什么是类方法？
      @staticmethod是静态方法。
      @classmethod是类方法。
      实例方法是只有实例化对象之后才可以使用的方法。
+     类方法
      
 0x01 @staticmethod有什么作用？@classmethod有什么作用？实例方法有什么作用？
      @staticmethod用于修饰类中的方法，可以无视本身self。
