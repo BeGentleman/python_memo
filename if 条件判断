@@ -1,0 +1,17 @@
+0x00 输入以下 语句，会有什么返回结果。
+
+>>> a= 2
+>>> if a == 10000000 or 45465464:
+...     print("aaaaaaaaaaaa")
+...
+aaaaaaaaaaaa
+
+>>> if a == 10000000 or 45465464: 的含义是先判断 a==1000000 这是False，然后45465464是个True，or一下就是 True
+
+
+数字0是False
+数字0以外都为True
+
+字符串不空为True,空（a=""）为False
+
+None为False
