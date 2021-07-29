@@ -1,0 +1,6 @@
+目标字符串.replace("被替换的字符", "想要替换的字符")
+
+>>> str1 = "abcdefg"
+>>> str1.replace("abc","456")
+'456defg'
+>>>
