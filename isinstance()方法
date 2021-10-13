@@ -1,0 +1,15 @@
+# 用法
+判断一个对象是否属于已知的类型
+
+# 语法
+isinstance(目标对象, (已知类型))
+
+# 举例子
+>>> a = "hello world"
+>>> isinstance(a, int)
+False
+>>> isinstance(a, str)
+True
+>>> isinstance(a, (str, int))
+True
+>>>
