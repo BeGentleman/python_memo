@@ -100,8 +100,28 @@
                >>> 
                
           然后是用yeild关键字：
-               # TODO
+               import sys
 
+               # 生成器
+               def fab(max):
+                   n, a, b = 0, 0, 1
+                   while True:
+                       if n >= max:
+                           return     
+                       yield a
+                       a, b = b, a+b
+                       n += 1
+               f = fab(5)
+
+               while True:
+                   try:
+                       print(next(f), end=" ")
+                   except:
+                       sys.exit()
+
+
+               # 输出：
+               0 1 1 2 3
 0x04 使用生成器的案例：
 
      
