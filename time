@@ -1,0 +1,4 @@
+import time
+time.time()
+
+单位是 秒
