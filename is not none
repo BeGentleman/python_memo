@@ -18,6 +18,14 @@
           而第二个a is None是True，所以可以走进条件判断里面，可以输出“走进来了”。
           
           得到 返回值 是bool类型。
+          
+          
+     或者：
+         >>> a = None
+         >>> if a!=None:
+         print("asdasdasdasdasdasd")
+         >>>
+         
 
 0x01 一般用在什么地方？
      在数据清理的时候，比如从excel中读取数据以后，excel中有些数据不存在（不是0，也不是null），就会用到None这种类型（null是str类型）。
